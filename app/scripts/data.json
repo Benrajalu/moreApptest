@@ -1,0 +1,43 @@
+[
+	{
+		"name": "Compass et Sass",
+		"description": "Instructions d’installation de Compass et introduction au langage SASS",
+		"url": "http://benrajalu.net/more/compass/", 
+		"img": "compass.jpg",
+		"checklist": [
+			"Installer ruby",
+			"Installer compass",
+			"Tester les installations",
+			"Créer un projet compass",
+			"Lancer compass"
+		]
+	},
+	{
+		"name": "jQuery & javascript",
+		"description": "Rapide introduction à l'usage de jQuery et de javascript", 
+		"url" : "http://benrajalu.net/more/js/",
+		"img": "js.jpg",
+		"checklist": [
+			"Qu'est-ce que jQuery ?",
+			"Pourquoi utiliser jQuery ?",
+			"Qu'est-ce qu'un plugin ?",
+			"Installer un plugin",
+			"Customizer un plugin",
+			"Introdution au javascript"
+		]
+	},
+	{
+		"name": "Portfolio 2015",
+		"description": "Intégration HTML5 CSS3 et développement jQuery dans le contexte d'un projet", 
+		"url": "http://benrajalu.net/more/2015/",
+		"img": "portfolio.jpg",
+		"checklist": [
+			"Qu'est-ce que jQuery ?",
+			"Pourquoi utiliser jQuery ?",
+			"Qu'est-ce qu'un plugin ?",
+			"Installer un plugin",
+			"Customizer un plugin",
+			"Introdution au javascript"
+		]
+	}
+]

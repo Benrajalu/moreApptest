@@ -1,0 +1,28 @@
+<!-- Here's the home, the collection -->
+<div id="splash" ng-style="svg">
+	<div>
+		<article>
+			<section>
+				<h1 id="card">TIW</h1>
+			</section>
+			<section>
+				<h2>Archive et collection</h2>
+				<h2>Materiel d'étude pour formation</h2>
+			</section>
+		</article>
+	</div>
+</div>
+
+<div class="row globalPadding">
+	<div class="large-8 columns clearfix">
+		<article ng-repeat="item in collection.items" class="collectionTeaser" style="background-image:url('images/{{ item.img }}')">
+			<collection-teaser></collection-teaser>
+		</article>
+	</div>
+	<div class="large-4 columns">
+		<ul id="links">
+			<li ng-repeat="link in collection.listing" link>
+			</li>
+		</ul>
+	</div>
+</div>

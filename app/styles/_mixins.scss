@@ -1,0 +1,33 @@
+// Here goes the mixins
+
+	// Clearfix
+		@mixin clearfix(){
+			&:before,
+			&:after {
+			    content: " "; /* 1 */
+			    display: table; /* 2 */
+			}
+
+			&:after {
+			    clear: both;
+			}
+
+			*zoom: 1;
+		}
+
+	// Fonts
+		@mixin regular($size, $color){
+			font-family:'regular', sans-serif;
+			font-size:$size;
+			color:$color;
+		}
+		@mixin light($size, $color){
+			font-family:'light', sans-serif;
+			font-size:$size;
+			color:$color;
+		}
+		@mixin bold($size, $color){
+			font-family:'bold', sans-serif;
+			font-size:$size;
+			color:$color;
+		}
