@@ -1,5 +1,6 @@
 #splash{
   position:relative;
+  @include transition(all 300ms ease-out);
   > div{
     position:absolute;
     bottom:215px;
@@ -37,5 +38,99 @@
     background:$white;
     @include transform(rotate(45deg));
     content:" ";
+  }
+
+  &.smaller{
+    &:after{
+      display:none;
+    }
+    .back{
+      position:absolute;
+      bottom:-22.5px;
+      left:0;
+      right:0;
+      margin:0 auto;
+      width:45px;
+      height:45px;
+      background:$white;
+      line-height:45px;
+      @include transform(rotate(45deg));
+      display:block;
+      text-align:center;
+      @include transition(all 300ms ease-out);
+      i{
+        font-size:30px;
+        color:$green;
+        display:block;
+        width:11px;
+        height:30px;
+        position:absolute;
+        top:50%;
+        margin-top:-15px;
+        left:50%;
+        margin-left:-5.5px;
+        @include transform(rotate(-45deg));
+      }
+      &:hover, &:focus{
+         @include transform(rotate(45deg) scale(1.1));
+      }
+      &:active{
+        @include transform(rotate(45deg) scale(1.2));
+      }
+    }
+    > div{
+      position:static;
+      padding:50px 50px;
+      > article{
+        width:100%;
+        section{
+          text-align:center;
+          h2{
+            @include light(14px, $white);
+          }
+          h2.title{
+            @include light(30px, $white);
+          }
+          ul{
+            margin-top:10px;
+            li{
+              display: inline-block;
+              a{
+                display:block;
+                width:35px;
+                height:35px;
+                line-height: 35px;
+                background:$white;
+                @include border-radius(100%);
+                margin:0 3px;
+                @include transition(all 300ms ease-out);
+                i{
+                  display:inline-block;
+                  vertical-align: middle;
+                  line-height: 1;
+                  color:$green;
+                  font-size:15px;
+                }
+                &:hover{
+                  @include transform(scale(1.1));
+                  background:$black;
+                  i{
+                    @include transform(scale(0.9));
+                  }
+                }
+                &:active{
+                  @include transform(scale(1.2));
+                  background:$greyBG;
+                }
+                &:focus{
+                  @include transform(scale(1.2));
+                  border:1px solid $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

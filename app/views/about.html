@@ -1,1 +1,21 @@
-<p>This is the about view.</p>
+<div id="splash" ng-style="svg" class="smaller">
+	<div>
+		<article>
+			<section>
+				<h2 class="title">{{ detail.current.name }}</h2>
+				<h2>{{ detail.current.description }}</h2>
+				<ul ng-show="detail.current.url.length || detail.current.archive.length">
+					<li ng-show="detail.current.url.length"><a href="{{detail.current.url}}" target="_blank" title="Démo"><i class="fa fa-link"></i></a></li>
+					<li ng-show="detail.current.archive.length"><a href="{{detail.current.archive}}" target="_blank" title="Archive"><i class="fa fa-archive"></i></a></li>
+				</ul>
+			</section>
+		</article>
+	</div>
+	<a href="#/?scrollTo=collection" class="back" title="Retour à l'accueil"><i class="fa fa-angle-left"></i></a>
+</div>
+
+<ul>
+	<li ng-repeat="checks in detail.current.checklist">
+		{{ checks }}
+	</li>
+</ul>   

@@ -11,7 +11,8 @@
 
 // Make a pattern
 
-angular.module('collectionApp').controller('MainCtrl', ['$scope', '$window', '$http', function ($scope, $window, $http) {
+angular.module('collectionApp').controller('MainCtrl', ['$scope', '$window', '$http', '$routeParams',
+	function ($scope, $window, $http, $routeParams) {
 	// Splash background
 		$scope.height= $window.innerHeight - 60;
 		$scope.width= $window.innerWidth;
@@ -43,6 +44,16 @@ angular.module('collectionApp').controller('MainCtrl', ['$scope', '$window', '$h
 		$http.get('scripts/links.json').success(function(data){
 			collection.listing = data;
 		});
+
+	// Scroll if route params say scroll
+		collection.routing = '#' + $routeParams.scrollTo;
+		if(collection.routing.length){
+			setTimeout(function(){
+				$('html,body').animate({
+		          scrollTop: $(collection.routing).offset().top
+		        }, 600);
+			},300);
+		}
 }])
 .directive('collectionTeaser', function(){
 	return{

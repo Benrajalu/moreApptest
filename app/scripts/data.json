@@ -1,6 +1,7 @@
 [
 	{
 		"name": "Compass et Sass",
+		"route": "compass-sass",
 		"description": "Instructions d’installation de Compass et introduction au langage SASS",
 		"url": "http://benrajalu.net/more/compass/", 
 		"img": "compass.jpg",
@@ -14,6 +15,7 @@
 	},
 	{
 		"name": "jQuery & javascript",
+		"route": "jquery-js",
 		"description": "Rapide introduction à l'usage de jQuery et de javascript", 
 		"url" : "http://benrajalu.net/more/js/",
 		"img": "js.jpg",
@@ -28,9 +30,11 @@
 	},
 	{
 		"name": "Portfolio 2015",
+		"route": "portfolio",
 		"description": "Intégration HTML5 CSS3 et développement jQuery dans le contexte d'un projet", 
 		"url": "http://benrajalu.net/more/2015/",
 		"img": "portfolio.jpg",
+		"archive" : "https://drive.google.com/file/d/0B0CiFBxhgDilSmZGNG5lNHNOYzA/view?usp=sharing",
 		"checklist": [
 			"Qu'est-ce que jQuery ?",
 			"Pourquoi utiliser jQuery ?",
