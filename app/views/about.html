@@ -14,8 +14,9 @@
 	<a href="#/?scrollTo=collection" class="back" title="Retour à l'accueil"><i class="fa fa-angle-left"></i></a>
 </div>
 
-<ul>
+<ul id="checklist">
 	<li ng-repeat="checks in detail.current.checklist">
-		{{ checks }}
+		<input type="checkbox" id="check{{ $index }}" value="{{ checks }}" />
+		<label for="check{{ $index }}"><span>{{ checks }}</span> <i class="fa fa-check"></i></label>
 	</li>
 </ul>   

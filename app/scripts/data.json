@@ -9,14 +9,14 @@
 			"Installer ruby",
 			"Installer compass",
 			"Tester les installations",
-			"Créer un projet compass",
-			"Lancer compass"
+			"Créer un projet Compass",
+			"Lancer Compass"
 		]
 	},
 	{
-		"name": "jQuery & javascript",
+		"name": "jQuery & Javascript",
 		"route": "jquery-js",
-		"description": "Rapide introduction à l'usage de jQuery et de javascript", 
+		"description": "Rapide introduction à l'usage de jQuery et de Javascript", 
 		"url" : "http://benrajalu.net/more/js/",
 		"img": "js.jpg",
 		"checklist": [
@@ -25,7 +25,7 @@
 			"Qu'est-ce qu'un plugin ?",
 			"Installer un plugin",
 			"Customizer un plugin",
-			"Introdution au javascript"
+			"Introduction au Javascript"
 		]
 	},
 	{
@@ -36,12 +36,12 @@
 		"img": "portfolio.jpg",
 		"archive" : "https://drive.google.com/file/d/0B0CiFBxhgDilSmZGNG5lNHNOYzA/view?usp=sharing",
 		"checklist": [
-			"Qu'est-ce que jQuery ?",
-			"Pourquoi utiliser jQuery ?",
-			"Qu'est-ce qu'un plugin ?",
-			"Installer un plugin",
-			"Customizer un plugin",
-			"Introdution au javascript"
+			"Télécharger les maquettes",
+			"Intégration de la home",
+			"Filtrer avec mixitup.js",
+			"Intégration de la page projet",
+			"Slider ? flexslider.js !",
+			"Enrichir les pages avec CSS3"
 		]
 	}
 ]

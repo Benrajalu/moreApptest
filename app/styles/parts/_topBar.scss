@@ -17,5 +17,13 @@
     right:0;
     text-indent:-9999px;
     text-align:left;
+    position:relative;
+    z-index:999;
+    @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+        background:url("../images/logoX2.png") center center no-repeat;
+        background-size:50px 67px;
+    }
   }
 }

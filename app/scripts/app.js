@@ -46,11 +46,11 @@ $(window).load(function(){
       var ax = -($(window).innerWidth()/2- e.pageX)/20;
       var ay = ($(window).innerHeight()/2- e.pageY)/10;
 
-      if(ax > 20){
-        ax = 20;
+      if(ax > 40){
+        ax = 40;
       }
-      else if(ax < -20){
-        ax= -20;
+      else if(ax < -40){
+        ax= -40;
       }
 
       if(ay > 20){
@@ -60,7 +60,7 @@ $(window).load(function(){
         ay = -20;
       }
 
-      card.attr('style', 'transform: rotateY('+ax+'deg) rotateX('+ay+'deg);-webkit-transform: rotateY('+ax+'deg) rotateX('+ay+'deg);-moz-transform: rotateY('+ax+'deg) rotateX('+ay+'deg)');
+      card.attr('style', 'transform: rotateY('+-ax+'deg) rotateX('+ay+'deg);-webkit-transform: rotateY('+-ax+'deg) rotateX('+ay+'deg);-moz-transform: rotateY('+-ax+'deg) rotateX('+ay+'deg)');
     });
   }
 });
